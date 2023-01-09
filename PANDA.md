@@ -1,0 +1,2 @@
+## Data Clearing
+```df.shape```
