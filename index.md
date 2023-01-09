@@ -1,3 +1,3 @@
-# Command Line Notes
-## Creating New Files
-Terminal -> vim [].txt -> ```:wq```to save
+[Command Lines](https://github.com/asdacdsfca/DSC80/blob/main/Command-Lines.html)
+
+[Panda](https://github.com/asdacdsfca/DSC80/blob/main/PANDA.html)
