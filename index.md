@@ -1,3 +1,3 @@
-[Command Lines](https://github.com/asdacdsfca/DSC80/Command-Lines.html)
+[Command Lines](https://asdacdsfca.github.io/DSC80/Command-Lines.html)
 
-[Panda](https://github.com/asdacdsfca/DSC80/PANDA.html)
+[Panda](https://asdacdsfca.github.io/DSC80/Panda.html)
