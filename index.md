@@ -1,3 +1,3 @@
 # Command Line Notes
-## Create New Files
+## Creating New Files
 Terminal -> vim [].txt -> ```:wq```to save
