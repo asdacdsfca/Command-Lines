@@ -38,3 +38,6 @@ df[col] selects the column labeled by the value col. Each selection results in a
 |`tail`|return the last `n` entries of a Series|
 |`count`|Count the number of non-null entries of a Series|
 |`nunique`|Returns number of unique values of a Series|
+
+15. Removes duplicate rows :```drop_duplicates()```.
+16. 
