@@ -22,6 +22,19 @@
 
 10. Transpose the df: ```.T```
 
-11. Basic properties: <img width="400" alt="image" src="https://user-images.githubusercontent.com/114449631/211650046-097d93ea-94e8-4f2a-9582-d8e7da443ea7.png">
+11. Basic properties: 
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/114449631/211650046-097d93ea-94e8-4f2a-9582-d8e7da443ea7.png">
 
-12. Creating dataframe using series: <img width="400" alt="image" src="https://user-images.githubusercontent.com/114449631/211650426-42b56926-495e-4c8e-8cec-ed60847581bf.png">
+12. Creating dataframe using series: 
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/114449631/211650426-42b56926-495e-4c8e-8cec-ed60847581bf.png">
+
+13. df.loc[idx] selects the row indexed by the value idx,
+df[col] selects the column labeled by the value col. Each selection results in a Pandas.Series object indexed by the columns/index of df respectively.
+
+14.
+|Method Name|Description|
+|---|---|
+|`head`|return the first `n` entries of a Series|
+|`tail`|return the last `n` entries of a Series|
+|`count`|Count the number of non-null entries of a Series|
+|`nunique`|Returns number of unique values of a Series|
