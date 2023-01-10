@@ -18,6 +18,6 @@
 8. Apply a function along an axis of the df: ```df.agg([''])```
 
 9. Get the df that contains a specific column: ```df = df.loc[df[COLUMNS].notnull()```
-<img width="871" alt="image" src="https://user-images.githubusercontent.com/114449631/211441567-435e8bd3-2475-43d6-b807-177925066d65.png">
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/114449631/211441567-435e8bd3-2475-43d6-b807-177925066d65.png">
 
 10. 
