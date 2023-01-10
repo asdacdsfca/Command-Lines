@@ -16,8 +16,8 @@
 7. All rows/columns: ```axis=0```=>all the rows in each column; ```axis=1```=>all the columns in each row
 
 8. Apply a function along an axis of the df: ```df.agg([''])```
-9. Get the df that contains a specific column: ```df = df.loc[df[COLUMNS].notnull()```
-<img width="795" alt="image" src="https://user-images.githubusercontent.com/114449631/211441000-9349e625-2ef0-4e4c-995a-8248491402e8.png">
 
+9. Get the df that contains a specific column: ```df = df.loc[df[COLUMNS].notnull()```
+<img width="871" alt="image" src="https://user-images.githubusercontent.com/114449631/211441567-435e8bd3-2475-43d6-b807-177925066d65.png">
 
 10. 
