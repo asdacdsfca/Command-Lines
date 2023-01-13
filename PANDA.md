@@ -40,4 +40,11 @@ df[col] selects the column labeled by the value col. Each selection results in a
 |`nunique`|Returns number of unique values of a Series|
 
 15. Removes duplicate rows :```drop_duplicates()```.
-16. 
+
+16. Select rows based on some conditions: salary[salary['Team'] == 'Los Angeles Lakers']
+
+17. Series has at least one item greater than a value: 'a' in s
+
+
+18. 
+19. 
