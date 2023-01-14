@@ -45,6 +45,7 @@ df[col] selects the column labeled by the value col. Each selection results in a
 
 17. Series has at least one item greater than a value: 'a' in s
 
+18. Does not contain a part of string: df[df['geo'].str.contains(",")==False]
 
-18. 
-19. 
+19. Skip first entry in for loop in python：for car in cars[1:]:
+20. 
