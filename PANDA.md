@@ -48,4 +48,9 @@ df[col] selects the column labeled by the value col. Each selection results in a
 18. Does not contain a part of string: df[df['geo'].str.contains(",")==False]
 
 19. Skip first entry in for loop in python：for car in cars[1:]:
-20. 
+
+20. The maximum element in each column: schools.max()
+
+21. The number of unique values in each column: schools.nunique()
+
+22. Change the type of a column: schools['Enrollment'] = schools['Enrollment'].str.replace(',', '').astype(int)
