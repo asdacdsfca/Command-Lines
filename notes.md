@@ -48,4 +48,9 @@ Never loop over the rows of a DataFrame (operations over columns are vectorized 
 Use built-in DataFrame methods on columns, over custom python functions, whenever possible (these functions are C-optimized Numpy methods).
 Explicitly type the data if memory is an issue (more on that later!).
 
+# Data Types
+A column’s data type determines which operations can be applied to it:
+- Numpy arrays are by default of homogeneous data type.
+- Pandas DataFrames are heterogeneous, column oriented tables. The columns are homogeneous, implying that column methods are fast.
+- Pandas makes heavy use of the object data-type, which contains generic ‘object’ values that may be of mixed type. Performing operations on these columns is slow.
 
