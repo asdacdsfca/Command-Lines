@@ -127,6 +127,7 @@ currencies.loc[ends_in_o]
  # 3.4 Computing quantitative distributions with np.histogram
 - The array of bin edges is one element larger than the array of densities (and the number of bins).
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/114449631/212561832-b91c1bd2-c790-4537-9ecf-64d2abb63cb3.png">
+
 - By default, the histogram uses 10 equally sized bins, spanning the range of the input data.
 - Specifying a different number of bins (via an integer) results in equally sized bins.
 - Non-equally sized bins are specified by passing a list of end-points.
