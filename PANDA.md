@@ -54,9 +54,11 @@ df[col] selects the column labeled by the value col. Each selection results in a
 21. The number of unique values in each column: schools.nunique()
 
 22. Change the type of a column: schools['Enrollment'] = schools['Enrollment'].str.replace(',', '').astype(int)
+
 23. To remove duplicates on specific column(s), use subset: df.drop_duplicates(subset=['brand'])
+
 24. applies multiple Series methods to the columns of a DataFrame: 
 df.agg([f1,...,fN]) returns a DataFrame obtained by applying each function to each column of df,
 df.agg({col1:f1,...,colN:fN}) returns a Series obtained by applying each function to column specified by its corresponding key.
 
-25. 
+25. Multi-conditions selection: (currencies['continent'] == 'Asia') | (currencies['exchange'] < 1)
