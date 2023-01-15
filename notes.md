@@ -28,6 +28,24 @@
 14. <img width="500" alt="image" src="https://user-images.githubusercontent.com/114449631/212501047-c035a516-f0ae-4317-a1f5-16a85e354977.png">
 
 15. <img width="500" alt="image" src="https://user-images.githubusercontent.com/114449631/212501072-2696b094-f07c-4af6-802a-e2b35dd6d6cd.png">
+# 16. 
+Applying Numpy functions to a Series (e.g. a column of a DataFrame) results in applying the function to the data in the underlying Numpy array.
+ex. np.sum(ages) / ages.shape[0]
+Pandas supplies these Numpy function as Series methods as well.
+ex. ages.mean()
 
+# The apply method
+The apply method is both a Series and a DataFrame method for applying custom functions across data.
+Notice that, when applied to a DataFrame, func should be a function that takes in a Series.
+
+# The agg method
+The agg method simultaneously applies multiple Series methods to the columns of a DataFrame.
+ex. uswnt.agg(['mean', np.median, 'max'])
+ex. uswnt.agg({'Player': ['min', 'max'], 'Age': ['mean', np.median, 'max']})
+
+# Pandas
+Never loop over the rows of a DataFrame (operations over columns are vectorized by Numpy array calculations).
+Use built-in DataFrame methods on columns, over custom python functions, whenever possible (these functions are C-optimized Numpy methods).
+Explicitly type the data if memory is an issue (more on that later!).
 
 
