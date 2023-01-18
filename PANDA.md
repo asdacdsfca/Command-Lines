@@ -62,3 +62,17 @@ df.agg([f1,...,fN]) returns a DataFrame obtained by applying each function to ea
 df.agg({col1:f1,...,colN:fN}) returns a Series obtained by applying each function to column specified by its corresponding key.
 
 25. Multi-conditions selection: (currencies['continent'] == 'Asia') | (currencies['exchange'] < 1)
+
+26. drop a column: df = df.drop('column_name', axis=1)
+
+27. Rename Specific Columns: df = df.rename(columns={'oldName1': 'newName1', 'oldName2': 'newName2'})
+
+28. Convert Dataframe column into an index: df = df.set_index('Name')
+
+29. Filters columns by strings = grades_copy.filter(like='Lateness').filter(like = 'lab')
+
+30. Multiple boolean conditions: ((scores['attempts']>1) & (scores['highest_score']<60.0)) 
+
+31. Reassign row values based on conditions: scores.loc[scores['passed'] == True, ['pass']] = 'Yes'
+
+32. Get the index: list(df.index.values)
