@@ -146,4 +146,23 @@ inspections['inspection_score'].plot(
 - However, the groups property returns a dictionary keyed by group label, with the indices of df corresponding to each group label:
 G.groups
 - The G.get_group(label) method returns the DataFrame df.loc[df[key] == label]
+- The components of split-apply-combine are as follows:
+    Split the data into groups based on some criteria (often encoded in a column).
+    Apply function(s) to each group independently.
+    Combine the results into a data structure (e.g. a Series or DataFrame)
 - [groupby also accepts a function to split data into groups](https://notes.dsc80.com/content/05/grouping.html)
+
+# 5.1 Apply-Combine: GroupBy methods
+- To calculate the routes with the most climbers on a given day, group the climbs by both date and route name:
+(
+    climbs
+    .groupby(['Date', 'Route'])['Attempted']
+    .sum()
+    .sort_values(ascending=False)
+    .reset_index()
+)
+- Remark: Grouping on multiple columns results in a multi-indexed Series/DataFrame; using reset_index on the output simplifies further processing.
+- Notice that the Date column was dropped from the output; Pandas drops non-numeric columns when any of the aggregation methods requires numeric data.
+
+# 5.1 Generic Apply-Combine: apply method
+[Process of filtering data frame](https://notes.dsc80.com/content/05/grouping.html#generic-apply-combine-apply-method)
