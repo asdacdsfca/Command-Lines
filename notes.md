@@ -165,4 +165,5 @@ G.groups
 - Notice that the Date column was dropped from the output; Pandas drops non-numeric columns when any of the aggregation methods requires numeric data.
 
 # 5.1 Generic Apply-Combine: apply method
-[Process of filtering data frame](https://notes.dsc80.com/content/05/grouping.html#generic-apply-combine-apply-method)
+- [Process of filtering data frame](https://notes.dsc80.com/content/05/grouping.html#generic-apply-combine-apply-method)
+- seems like groupby returns many data frames
