@@ -76,3 +76,14 @@ df.agg({col1:f1,...,colN:fN}) returns a Series obtained by applying each functio
 31. Reassign row values based on conditions: scores.loc[scores['passed'] == True, ['pass']] = 'Yes'
 
 32. Get the index: list(df.index.values)
+
+33. Read csv file: scores_fp = os.path.join('data', 'scores.csv')
+scores = pd.read_csv(scores_fp)
+
+34. apply a function to dataframe: result_data.applymap(change)
+
+35. get the number of unique values: df.nunique(axis=0)
+
+36. get X largest number of elements that appeared in a column: df[columns].value_counts().nlargest(N)
+
+37. 
