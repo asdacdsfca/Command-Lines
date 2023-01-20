@@ -141,3 +141,9 @@ inspections['inspection_score'].plot(
     kind='kde', 
     title='kernel density estimate of the distribution of inspection scores'
 );
+
+# 5.1 Split: the groupby DataFrame method
+- However, the groups property returns a dictionary keyed by group label, with the indices of df corresponding to each group label:
+G.groups
+- The G.get_group(label) method returns the DataFrame df.loc[df[key] == label]
+- [groupby also accepts a function to split data into groups](https://notes.dsc80.com/content/05/grouping.html)
