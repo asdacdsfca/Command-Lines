@@ -167,3 +167,10 @@ G.groups
 # 5.1 Generic Apply-Combine: apply method
 - [Process of filtering data frame](https://notes.dsc80.com/content/05/grouping.html#generic-apply-combine-apply-method)
 - seems like groupby returns many data frames
+
+# 5.2 Reshaping Data: Pivot Tables
+- The pivot refers to reshaping a table from a long table of rows indexed by two characteristics, to a wide table with one characteristic per axis.
+- Remark: The pivot_table is equivalent to pivot when the aggregation function is the identity function (aggfunc=lambda x:x).
+
+# 5.2 Undoing a pivot
+- Note that melt only undoes the reshaping operation of pivot – in general, the groupby aggregations cannot be inverted!
