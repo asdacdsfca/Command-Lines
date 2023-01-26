@@ -1,3 +1,6 @@
+# Lectures to Review
+6
+
 1. <img width="500" alt="image" src="https://user-images.githubusercontent.com/114449631/212500324-a02a265d-b413-4f27-b0a3-acdd0278c14f.png">
 
 2. unlike most pandas methods, assign returns a new DataFrame.
