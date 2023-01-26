@@ -177,3 +177,14 @@ G.groups
 
 # 5.2 Undoing a pivot
 - Note that melt only undoes the reshaping operation of pivot – in general, the groupby aggregations cannot be inverted!
+
+# 4.1 Mutating DataFrames using assign
+- a copy of a dataframe
+- [Modifying subtables with loc](https://notes.dsc80.com/content/04/modifying-dataframes.html#modifying-subtables-with-loc)
+
+# 4.2 Cleaning Messy Data
+- create a data type = CategoricalDtype(categories=['Rural', 'Suburban', 'City', 'Urban'], ordered=True)
+- The pandas function pd.to_numeric(series, errors='coerce') blindly coerces values of a Series to numeric values. When the keyword argument errors='coerce' silently replaces any non-coercible values with a missing value. This often leads to dropping data that never should have been dropped; non-coercible data should be handled with care, as it’s often present due to systematic issues with how the data was recorded. If such a function was used on numbers, 1/3 of the data would be lost!
+- [Summary of clearing](https://notes.dsc80.com/content/04/cleaning.html#summary-cleaning-up-data-types)
+- [Some common missing data](https://notes.dsc80.com/content/04/cleaning.html#missing-data)
+- 
