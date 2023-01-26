@@ -95,3 +95,7 @@ scores = pd.read_csv(scores_fp)
 40. create data frame and assign column names: pd.DataFrame(columns = )
 
 41. forcely convert a column into ints: pd.to_numeric(students['DSC 80 Final Grade'], errors='coerce')
+
+42. Set value for an entire column: df.loc[:, 'max_speed'] = 30
+
+43. 
