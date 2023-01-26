@@ -86,4 +86,12 @@ scores = pd.read_csv(scores_fp)
 
 36. get X largest number of elements that appeared in a column: df[columns].value_counts().nlargest(N)
 
-37. 
+37. arithmatics on series with different size but same index values: cleaned_copy = cleaned_copy.set_index('nation') => cleaned_copy['mean_score'] = cleaned_copy.groupby('nation')['score'].mean() => cleaned_copy['score'] = cleaned_copy['score'] - cleaned_copy['mean_score'] (lab03, q2)
+
+38. create new columns by spliting existing columns: df_copy[['nation', 'national_rank_cleaned']] = df_copy.national_rank.str.split(',', expand=True)
+
+39. check if it contains any null values: new_control['city'].notnull()
+
+40. create data frame and assign column names: pd.DataFrame(columns = )
+
+41. forcely convert a column into ints: pd.to_numeric(students['DSC 80 Final Grade'], errors='coerce')
