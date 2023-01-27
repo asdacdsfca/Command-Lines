@@ -178,6 +178,10 @@ G.groups
 # 5.2 Undoing a pivot
 - Note that melt only undoes the reshaping operation of pivot – in general, the groupby aggregations cannot be inverted!
 
+# 5.3 Combining Data: Observations
+- The Pandas Grouper allows one to group data by time frequency; this object is then passed to the splitting operation in a Pandas aggregation. Using Grouper requires specifying a frequency freq and a column key on which to group (if a key is omitted, the index is used).
+- counting attempts by the week: grouper = pd.Grouper(key='ParsedDate', freq='7d')
+
 # 4.1 Mutating DataFrames using assign
 - a copy of a dataframe
 - [Modifying subtables with loc](https://notes.dsc80.com/content/04/modifying-dataframes.html#modifying-subtables-with-loc)
