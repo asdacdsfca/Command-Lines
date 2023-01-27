@@ -98,4 +98,8 @@ scores = pd.read_csv(scores_fp)
 
 42. Set value for an entire column: df.loc[:, 'max_speed'] = 30
 
-43. 
+43.  Merge nearly duplicate rows based on column value: df = df.groupby(['OwnerID', 'Name_owner'])['Name_pet'].apply(', '.join).reset_index()
+-     where we want to get turn name_pet into a list of strings if ownerId's are the same
+44.  
+45.  
+46.   
