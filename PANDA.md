@@ -100,6 +100,9 @@ scores = pd.read_csv(scores_fp)
 
 43.  Merge nearly duplicate rows based on column value: df = df.groupby(['OwnerID', 'Name_owner'])['Name_pet'].apply(', '.join).reset_index()
 -     where we want to get turn name_pet into a list of strings if ownerId's are the same
-44.  
-45.  
+
+44.  convert a time like series to timeseries type: pd.to_datetime(sales['Date'])
+
+45.  convert a timeseries object to some string kind representation: TS.dt.strftime('%B')
+
 46.   
