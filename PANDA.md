@@ -105,4 +105,4 @@ scores = pd.read_csv(scores_fp)
 
 45.  convert a timeseries object to some string kind representation: TS.dt.strftime('%B')
 
-46.   
+46.  change the column values by row index : sales_copy.loc[0, ['Total']] = np.NaN
