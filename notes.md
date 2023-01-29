@@ -182,6 +182,13 @@ G.groups
 - The Pandas Grouper allows one to group data by time frequency; this object is then passed to the splitting operation in a Pandas aggregation. Using Grouper requires specifying a frequency freq and a column key on which to group (if a key is omitted, the index is used).
 - counting attempts by the week: grouper = pd.Grouper(key='ParsedDate', freq='7d')
 
+# 5.4 Combining Data: Attributes
+- [Joining data column-wise](https://notes.dsc80.com/content/05/joining-data.html#joining-data-column-wise)
+- Joins in Pandas are exact matches between join keys, including a match on the data type. For example, columns with integer columns, with one of them typed as a string, will fail to properly join. These mistakes are hard to spot, as Pandas hides the type of the contents of DataFrames on formating.
+- When joining new attributes to a dataset under investigation, the additional information isn’t always available for the complete population. For example, when investigating the incomes by California county, suppose one attempts to join demographic information (such as population size) to the incomes dataset. However, if this demographic information is only available for counties with a large population, the merge dataset will exhibit significant bias
+- By default, merge sets the join-key to the set of all common columns between the DataFrames being merged, sometimes leading to unintended consequences when both tables share similar attributes. The join-key can be specified explicitly using the keyword on.
+- [Broadcast join](https://notes.dsc80.com/content/05/joining-data.html#broadcast-join)
+
 # 4.1 Mutating DataFrames using assign
 - a copy of a dataframe
 - [Modifying subtables with loc](https://notes.dsc80.com/content/04/modifying-dataframes.html#modifying-subtables-with-loc)
