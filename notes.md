@@ -202,3 +202,10 @@ G.groups
 # CLT 11 Testing Hypotheses
 - Random samples of prospective jurors would be selected without replacement. However, when the size of a sample is small relative to the size of the population, sampling without replacement resembles sampling with replacement; the proportions in the population don’t change much between draws. The population of eligible jurors in Alameda County is over a million, and compared to that, a sample size of about 1500 is quite small. We will therefore sample with replacement.
 - If you use a P% cutoff for the p-value, and the null hypothesis happens to be true, then there is about a p% chance that your test will conclude that the alternative is true.
+
+# [Graphs Color](https://blog.datawrapper.de/diverging-vs-sequential-color-scales/)
+- Use diverging shades if there’s a meaningful middle point
+- Use diverging shades to emphasize the extremes
+- Use diverging shades to let readers see more differences in the data
+- Use a sequential color scale for a more intuitive reading
+- 
