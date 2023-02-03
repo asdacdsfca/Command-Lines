@@ -108,3 +108,4 @@ scores = pd.read_csv(scores_fp)
 46.  change the column values by row index : sales_copy.loc[0, ['Total']] = np.NaN
 
 47.  Time within an interval: df.between_time('16:00:00', '20:00:00')
+48.  sort the values df.sort_values('Price').groupby('Name').last()
