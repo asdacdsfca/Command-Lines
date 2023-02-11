@@ -113,6 +113,6 @@ scores = pd.read_csv(scores_fp)
 
 49.  create a datetime object: pd.to_datetime('2019-01-01')
 
-50.  check if a value is NaN: child[1]!=child[1]
+50.  check if a value is NaN: ```child[1]!=child[1]```
 
-51.  in-place change of series values: child.update(pd.Series(fill_values, index = [i]))
+51.  in-place change of series values: ```child.update(pd.Series(fill_values, index = [i]))```
