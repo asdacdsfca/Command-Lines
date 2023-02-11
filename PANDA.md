@@ -108,4 +108,11 @@ scores = pd.read_csv(scores_fp)
 46.  change the column values by row index : sales_copy.loc[0, ['Total']] = np.NaN
 
 47.  Time within an interval: df.between_time('16:00:00', '20:00:00')
+
 48.  sort the values df.sort_values('Price').groupby('Name').last()
+
+49.  create a datetime object: pd.to_datetime('2019-01-01')
+
+50.  check if a value is NaN: child[1]!=child[1]
+
+51.  in-place change of series values: child.update(pd.Series(fill_values, index = [i]))
