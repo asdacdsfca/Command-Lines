@@ -208,4 +208,8 @@ G.groups
 - Use diverging shades to emphasize the extremes
 - Use diverging shades to let readers see more differences in the data
 - Use a sequential color scale for a more intuitive reading
-- 
+
+# 6. Missing Data
+- Ignorable Missing Data: Missing Completely at Random, Missing at Random
+- Ignorable missing data can be explained by a probability model, handled appropriately, and ultimately ignored
+- Non-ignorable Missing Data: NMAR
