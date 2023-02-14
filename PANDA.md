@@ -116,4 +116,8 @@ scores = pd.read_csv(scores_fp)
 50.  check if a value is NaN: ```child[1]!=child[1]```
 
 51.  in-place change of series values: ```child.update(pd.Series(fill_values, index = [i]))```
-52.  Series to dataframe: ser.to_frame()
+
+52.  Series to dataframe: `ser.to_frame()`
+53.  loads a JSON file from a file object: `json.load(f)`
+54.   loads a JSON file from a string: `json.loads(f)`
+55.   
