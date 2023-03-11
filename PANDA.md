@@ -122,6 +122,7 @@ scores = pd.read_csv(scores_fp)
 53.  loads a JSON file from a file object: `json.load(f)`
 
 54.   loads a JSON file from a string: `json.loads(f)`
+55.   get the first column of a df: df.columns[0]
 
 Regex
 56.  more than one: `[ ]{2,}`
